@@ -2,13 +2,11 @@
 
 **▶ Open the room (no download, no install): https://0smallcat0.github.io/interactive-3d-room/**
 
-**▶ 直接打開房間（不用下載、不用安裝）：https://0smallcat0.github.io/interactive-3d-room/**
-
 [![Interactive room](preview.png)](https://0smallcat0.github.io/interactive-3d-room/)
 
-Everything runs in your web browser (Chrome, Edge, Safari, Firefox) and is made for a computer screen. The file list above is only the source of the website; you do not need to open any of it.
+Runs in any modern browser, built for desktop.
 
-全部在瀏覽器裡開就能用，給電腦螢幕用。上面那一排檔案只是網站的原始檔，一般人不用點。
+瀏覽器直接開，免安裝；建議用電腦看。
 
 A 4.2 × 5.0 m studio furnished with six real IKEA Taiwan products, each built to the size printed on its product page. Prices and product links are shown, with a running total. The furniture shapes are simplified models made from those sizes, not the retailer's own 3D files.
 
