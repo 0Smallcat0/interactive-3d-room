@@ -8,9 +8,9 @@ Runs in any modern browser, built for desktop.
 
 瀏覽器直接開，免安裝；建議用電腦看。
 
-A 4.2 × 5.0 m studio furnished with six real IKEA Taiwan products, each built to the size printed on its product page. Prices and product links are shown, with a running total. The furniture shapes are simplified models made from those sizes, not the retailer's own 3D files. The POÄNG armchair was generated with the open-source TripoSG image-to-3D model from [a photo by Paulo O](https://commons.wikimedia.org/wiki/File:PO%C3%84NG_in_%E2%80%9CKnisa_Beige%E2%80%9D_(45144076894).jpg) ([CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)), then scaled to the listed size and given this variant's colours.
+A 4.2 × 5.0 m studio furnished with six real IKEA Taiwan products, each built to the size printed on its product page. Prices and product links are shown, with a running total. The furniture shapes are simplified models made from those sizes, not the retailer's own 3D files. By default every piece is a code-built skeleton at the listed size, which is all you need to check whether it fits. An optional "AI detail" look swaps in a POÄNG armchair generated with the open-source TripoSG image-to-3D model from [a photo by Paulo O](https://commons.wikimedia.org/wiki/File:PO%C3%84NG_in_%E2%80%9CKnisa_Beige%E2%80%9D_(45144076894).jpg) ([CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)), then scaled to the listed size and given this variant's colours. The AI detail look asks visitors to confirm their region first and is not offered in the EU, UK or South Korea.
 
-一間 4.2 × 5.0 公尺的套房，放了 6 件 IKEA 台灣真的在賣的家具，尺寸照官網商品頁，旁邊顯示價格、商品連結和總價。家具外形是照尺寸做的示意模型，不是商家的 3D 檔；POÄNG 扶手椅是用開源的 TripoSG 從一張實拍照片（Paulo O，CC BY 2.0）生成 3D，再縮到官網尺寸、上這款的顏色。
+一間 4.2 × 5.0 公尺的套房，放了 6 件 IKEA 台灣真的在賣的家具，尺寸照官網商品頁，旁邊顯示價格、商品連結和總價。家具外形預設是照尺寸用程式拼的骨架，量空間夠不夠用這個就好，不是商家的 3D 檔；另有「AI 細節」外觀，POÄNG 扶手椅改用開源的 TripoSG 從一張實拍照片（Paulo O，CC BY 2.0）生成 3D，再縮到官網尺寸、上這款的顏色；切換前要先確認所在地區，歐盟、英國、南韓不提供。
 
 How to use · 怎麼用：
 
