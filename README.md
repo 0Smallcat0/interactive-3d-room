@@ -30,3 +30,7 @@ How to use · 怎麼用：
 Your layout is saved in the browser automatically. The interface is in Chinese; the table above explains every button.
 
 擺好的位置會自動記住。
+
+More of my work (mechanical design: CAD, drawings, animation, renders): https://0smallcat0.github.io/mechanical-design-demos/
+
+更多作品（機械設計：CAD、工程圖、動畫、渲染）：https://0smallcat0.github.io/mechanical-design-demos/
