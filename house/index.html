@@ -70,6 +70,7 @@ html,body{height:100%;overflow:hidden;background:#111;font:14px/1.45 Inter,syste
 #load .pb{height:3px;background:var(--line);border-radius:2px;overflow:hidden}
 #load .pb i{display:block;height:100%;width:0;background:var(--acc);transition:width .2s}
 #load img{width:100%;margin-top:22px;opacity:.85;mix-blend-mode:multiply}
+body.pv #up,body.pv #map,body.pv #bar,body.pv #hint,body.pv #b-rooms,body.pv #stops{visibility:hidden}#load.pre{inset:auto 0 20px;background:none;pointer-events:none}#load.pre .in{background:var(--paper);padding:10px 16px 12px;border-radius:12px;width:min(300px,80vw);box-shadow:0 6px 24px rgba(0,0,0,.18)}#load.pre h1,#load.pre img{display:none}#load.pre p{margin-bottom:8px;font-size:13px}
 #modal{position:fixed;inset:0;background:rgba(15,18,22,.45);display:none;place-items:center;z-index:20}
 #modal.open{display:grid}
 #modal .card{width:min(460px,92vw);padding:22px;max-height:90vh;overflow:auto}
@@ -148,7 +149,7 @@ html,body{height:100%;overflow:hidden;background:#111;font:14px/1.45 Inter,syste
   </form>
   <div id="sent" style="display:none"><p style="margin:14px 0 8px" data-i="sent">Sent. This is the record the builder gets:</p><div class="sum" id="sentJson"></div><div class="row2"><button type="button" class="btn" id="b-close2" data-i="close">Close</button></div></div>
 </div></div>
-<div id="load"><div class="in"><h1>Glencoe Residence</h1><p data-i="loading">Loading the house — about 15 MB</p><div class="pb"><i></i></div><img src="map.png" alt="Original floor plan"></div></div>
+<div id="load"><div class="in"><h1>Glencoe Residence</h1><p data-i="loading">Loading the 3D house — about 30 MB</p><div class="pb"><i></i></div><img src="map.png" alt="Original floor plan"></div></div>
 <script type="module" src="app.js"></script>
 </body>
 </html>
