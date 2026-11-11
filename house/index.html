@@ -39,7 +39,7 @@ html,body{height:100%;overflow:hidden;background:#111;font:14px/1.45 Inter,syste
 #map canvas{width:100%;display:block;border-radius:8px;cursor:pointer}
 #up{position:fixed;right:16px;top:16px;width:300px;padding:14px 16px;max-height:calc(100% - 340px);display:flex;flex-direction:column}
 #opts{overflow:auto;min-height:0;flex:1;margin-right:-8px;padding-right:8px;padding-bottom:18px;-webkit-mask-image:linear-gradient(#000 calc(100% - 26px),transparent);mask-image:linear-gradient(#000 calc(100% - 26px),transparent)}
-#up:not(.open) h2,#up:not(.open) .sub,#up:not(.open) #opts,#up:not(.open) .note,#up:not(.open) #total .row{display:none}
+#up:not(.open) h2,#up:not(.open) .sub,#up:not(.open) #opts,#up:not(.open) .note,#up:not(.open) #total{display:none}
 #up:not(.open) #total{border-top:0;margin-top:0;padding-top:0}
 #up.open #b-up2{display:none}
 #up.open{max-height:calc(100% - 100px)}
@@ -91,7 +91,7 @@ body.pv #up,body.pv #map,body.pv #bar,body.pv #hint,body.pv #b-rooms,body.pv #st
  #stops,#b-rooms{display:none!important}
  #up{left:10px;right:10px;top:auto;bottom:126px;width:auto;max-height:46vh;display:none}
  #up.open{display:flex;bottom:72px;max-height:80vh}#up .sub{display:none}#total .big span{white-space:nowrap}
- #up:not(.open){display:flex;flex-direction:row;align-items:center;gap:10px;top:78px;bottom:auto;padding:8px 10px 8px 14px}
+ #up:not(.open){display:flex;flex-direction:row;align-items:center;gap:10px;top:78px;bottom:auto;left:auto;padding:6px}
  #up:not(.open) #total{flex:1}#up:not(.open) #total .big{margin:0}#up:not(.open) #total .big b{font-size:19px}#up:not(.open) #total .big span{font-size:12px}
  #up:not(.open) .cta{margin:0;padding:9px 12px;font-size:13px}#up:not(.open) #b-up2{display:none}
  #up.open~#map,#up.open~#hint{display:none}
@@ -122,7 +122,7 @@ body.pv #up,body.pv #map,body.pv #bar,body.pv #hint,body.pv #b-rooms,body.pv #st
     <div class="row"><span data-i="upg">Selected upgrades</span><span id="upgp"></span></div>
     <div class="big"><span data-i="tot">Your home</span><b id="totp"></b></div>
   </div>
-  <button class="cta" id="b-lead" data-i="cta">Request this configuration</button>
+  <button class="cta" id="b-lead" data-i="cta">Ask about this home</button>
   <button id="b-up2" data-i="custom">Customize finishes ▸</button>
   <div class="note" data-i="note">Sample pricing for this demo. Builders set their own numbers.</div>
 </div>

@@ -38,6 +38,9 @@ html,body{height:100%;overflow:hidden;background:#111;font:14px/1.45 Inter,syste
 #up{position:fixed;right:16px;top:16px;width:300px;padding:14px 16px;max-height:calc(100% - 290px);display:flex;flex-direction:column}
 #opts{overflow:auto;min-height:0;flex:1;margin-right:-8px;padding-right:8px}
 #up h2{font:600 17px Fraunces,Georgia,serif;margin-bottom:2px}
+#total{display:none}
+#up:not(.open) h2,#up:not(.open) .sub,#up:not(.open) #opts{display:none}#up:not(.open){width:240px}
+#up .more{margin-top:8px;background:none;border:0;color:var(--muted);font-size:12px;cursor:pointer}
 #up .sub{font-size:12px;color:var(--muted);margin-bottom:10px}
 .opt{margin:12px 0}
 .opt .t{font-size:12px;font-weight:600;letter-spacing:.04em;margin-bottom:6px;display:flex;justify-content:space-between}
@@ -80,7 +83,7 @@ html,body{height:100%;overflow:hidden;background:#111;font:14px/1.45 Inter,syste
  #top{left:10px;top:10px;right:10px;max-width:none;padding:10px 14px}
  #top h1{font-size:17px}#top .k{display:none}
  #stops{display:none}
- #up{left:10px;right:10px;top:auto;bottom:126px;width:auto;max-height:46vh;display:none}
+ #up{left:10px;right:10px;top:auto;bottom:126px;width:auto;max-height:46vh}#up:not(.open){left:10px;right:152px;bottom:72px;width:auto;padding:8px}#up .more{display:none}
  #up.open{display:flex;bottom:72px;max-height:62vh}
  #up.open~#map,#up.open~#hint{display:none}
  #map{width:132px;right:10px;bottom:70px;padding:6px}#map .hd{display:none}
@@ -102,15 +105,15 @@ html,body{height:100%;overflow:hidden;background:#111;font:14px/1.45 Inter,syste
 <div id="stops" class="panel"></div>
 <div id="up" class="panel">
   <h2 data-i="persTitle">Make it yours</h2>
-  <div class="sub" data-i="persSub">Switch finishes and see them in the room. Price updates as you go.</div>
+  <div class="sub" data-i="persSub">Switch finishes and see them in the room.</div>
   <div id="opts"></div>
   <div id="total">
     <div class="row"><span data-i="base">Base price</span><span id="basep"></span></div>
     <div class="row"><span data-i="upg">Selected upgrades</span><span id="upgp"></span></div>
     <div class="big"><span data-i="tot">Your home</span><b id="totp"></b></div>
   </div>
-  <button class="cta" id="b-lead" data-i="cta">Request this configuration</button>
-  <div class="note" data-i="note">Sample pricing for this demo. Builders set their own numbers.</div>
+  <button class="cta" id="b-lead" data-i="cta">Ask about this home</button>
+  <button class="more" id="b-up2" data-i="custom">Customize finishes ▸</button>
 </div>
 <div id="map" class="panel"><div class="hd"><span data-i="plan">Floor plan</span><span id="mapRoom"></span></div><canvas></canvas></div>
 <div id="bar" class="panel">
