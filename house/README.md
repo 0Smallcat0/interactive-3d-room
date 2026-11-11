@@ -11,11 +11,12 @@ A real architectural floor plan is traced to scale and built into a complete sin
 **What's inside · 有什麼：**
 
 - **The whole house, to scale.** Thirteen rooms and five terraces sit on a 324 m² footprint, and the furniture is placed by the plan's labels.
-  - Each room's traced short side matches the dimension printed on the plan within 2–10%.
   - The traced walls overlap the drawn walls at IoU 0.96.
-  - 整棟照比例：13 個空間、5 個露台，佔地 324 m²，家具照平面圖標示擺放。各房短邊與圖上標的尺寸相差 2–10%，描出的牆和原圖牆線重合度（IoU）0.96。
+  - 整棟照比例：13 個空間、5 個露台，佔地 324 m²，家具照平面圖標示擺放；描出的牆和原圖牆線重合度（IoU）0.96。
 - **Light baked in Blender Cycles.** Sunlight from a real sky, bounce light, and warm interior lights are baked into a 4096² lightmap, so it looks right on a phone too.
   - 光線用 Blender Cycles 烘焙：真實天空的日光、反射光和室內暖光烘成 4096² 光照圖，手機上也看得到。
+- **Photoreal stops.** Every guided-tour stop opens on a full 360° path-traced render of that room, so you can drag to look around a photo-quality view. Walk away, open the dollhouse or change a finish, and it hands over to the live 3D model.
+  - 照片級導覽站：每個導覽站都是該房間的 360° 光線追蹤全景，拖曳就能環顧。走開、切俯瞰或換材質時，會換回即時 3D 模型。
 - **Walk, dollhouse, guided tour.** Click the floor to walk there along a real path that goes around walls and furniture. Or flip to a cut-away dollhouse, or press *Guided tour*.
   - 走動／俯瞰模型／自動導覽：點地板就沿著繞開牆和家具的路線走過去；也可以切成掀頂的模型俯瞰，或按自動導覽。
 - **The original plan is the map.** The minimap is the architect's drawing, with your position, view direction, and current room highlighted.
@@ -26,11 +27,11 @@ A real architectural floor plan is traced to scale and built into a complete sin
   - 留資表單：送出的紀錄包含訪客在哪些房間停留、各多久，以及選了哪些建材。
 - **English / 中文** toggle.
 
-Built with three.js and Blender. Pricing in the demo is sample pricing. The lead form stores the record in your own browser only; nothing is sent anywhere.
+Built with three.js and Blender. Pricing in the demo is sample pricing. In this demo the lead record stays in your browser; a builder's version posts it to their inbox or CRM.
 
-用 three.js 和 Blender 做。價格是示範數字；表單紀錄只存在你自己的瀏覽器，不會送到任何地方。
+用 three.js 和 Blender 做。價格是示範數字。示範版的留資紀錄只存在你的瀏覽器；建商版會直接送進建商的信箱或客戶系統。
 
 **Credits · 素材來源**
 
 - Floor plan: Gary Berkovich, *Single Family Residence, Glencoe IL* (1994), [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:House_floorpan_by_Gary_Berkovich_(Glencoe,_Illinois).jpg), CC BY-SA 3.0. The traced plan data (`plan.json`) and the recolored map image (`map.png`) are adaptations, shared under CC BY-SA 3.0.
-- Furniture models, textures, and the sky (Ballawley Park HDRI): [Poly Haven](https://polyhaven.com), CC0.
+- Furniture models, textures, and the sky (Kloofendal HDRI): [Poly Haven](https://polyhaven.com), CC0.
