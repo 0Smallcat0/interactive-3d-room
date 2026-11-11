@@ -6,6 +6,10 @@
 
 Runs in any modern browser, on desktop or phone.
 
+**New: a whole house built from a real floor plan:** walk through it, change the finishes and see the price update: https://0smallcat0.github.io/interactive-3d-room/house/
+
+新作品：用真實平面圖蓋出的一整棟房子，可以走進去、換建材、看總價：https://0smallcat0.github.io/interactive-3d-room/house/
+
 瀏覽器直接開，免安裝，電腦和手機都能用。
 
 A 4.2 × 5.0 m studio furnished with six real IKEA Taiwan products, each built to the size printed on its product page. Prices and product links are shown, with a running total. Each piece is a look-alike model generated from its category and listed size, so you can see how it fits in the room. Walk inside at eye height with a floor-plan map that shows where you stand. The room's daylight is baked in Blender Cycles; furniture gets live sun shadows, so moved pieces still cast correct shadows.
