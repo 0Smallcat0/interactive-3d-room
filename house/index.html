@@ -39,7 +39,11 @@ html,body{height:100%;overflow:hidden;background:#111;font:14px/1.45 Inter,syste
 #map canvas{width:100%;display:block;border-radius:8px;cursor:pointer}
 #up{position:fixed;right:16px;top:16px;width:300px;padding:14px 16px;max-height:calc(100% - 340px);display:flex;flex-direction:column}
 #opts{overflow:auto;min-height:0;flex:1;margin-right:-8px;padding-right:8px;padding-bottom:18px;-webkit-mask-image:linear-gradient(#000 calc(100% - 26px),transparent);mask-image:linear-gradient(#000 calc(100% - 26px),transparent)}
-#up:not(.open) h2,#up:not(.open) .sub,#up:not(.open) #opts,#up:not(.open) .note,#up:not(.open) #total{display:none}
+#up:not(.open) h2,#up:not(.open) .sub,#up:not(.open) #sel,#up:not(.open) .lab,#up:not(.open) #cat,#up:not(.open) #b-reset{display:none}
+#sel{border:1px solid var(--line);border-radius:10px;padding:9px 10px;margin-bottom:10px;font-size:13px;background:#fff}#sel .none{color:var(--muted);font-size:12px}#sel .nm{font-weight:600;margin-bottom:6px}#sel .nm em{font-style:normal;color:#c0392b;font-weight:500;font-size:12px}#sel .sw button{padding:5px 9px}
+#up .lab{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}#cat{overflow:auto;min-height:0;flex:1}#cat button{padding:5px 9px}
+#b-reset{all:unset;cursor:pointer;font-size:12px;color:var(--muted);margin-top:10px;text-decoration:underline}
+#cross{position:fixed;left:50%;top:50%;width:6px;height:6px;margin:-3px 0 0 -3px;border-radius:50%;background:#fff;box-shadow:0 0 0 1.5px rgba(0,0,0,.45);pointer-events:none;display:none}body.fps #cross{display:block}body.fps #up,body.fps #stops,body.fps #map{opacity:.35}
 #up:not(.open) #total{border-top:0;margin-top:0;padding-top:0}
 #up.open #b-up2{display:none}
 #up.open{max-height:calc(100% - 100px)}
@@ -86,6 +90,8 @@ body.pv #up,body.pv #map,body.pv #bar,body.pv #hint,body.pv #b-rooms,body.pv #st
 #fade{position:fixed;inset:0;background:#000;opacity:0;pointer-events:none;transition:opacity .35s}
 .hide-m{}
 @media (max-width:820px){
+ .hide-m{display:none!important}
+ #up.open h2,#up.open .lab{display:none}#up.open{max-height:none;padding:10px 12px}#cat{flex:none;flex-wrap:nowrap;overflow-x:auto;padding-bottom:2px;scrollbar-width:none}#cat button{flex:none}#sel{margin-bottom:8px;padding:7px 10px}#sel .nm{margin-bottom:4px}#b-reset{margin-top:8px}#up.open .cta{margin-top:8px;padding:10px}
  #top{left:10px;top:10px;right:10px;max-width:none;padding:10px 14px}
  #top h1{font-size:17px}#top .k{display:none}
  #stops,#b-rooms{display:none!important}
@@ -106,6 +112,7 @@ body.pv #up,body.pv #map,body.pv #bar,body.pv #hint,body.pv #b-rooms,body.pv #st
 <body>
 <div id="view"></div>
 <div id="fade"></div>
+<div id="cross"></div>
 <div id="top" class="panel">
   <div class="k" data-i="kicker">Interactive walkthrough · built from the floor plan</div>
   <h1 data-i="title">Glencoe Residence</h1>
@@ -114,31 +121,29 @@ body.pv #up,body.pv #map,body.pv #bar,body.pv #hint,body.pv #b-rooms,body.pv #st
 </div>
 <div id="stops" class="panel"></div>
 <div id="up" class="panel">
-  <h2 data-i="persTitle">Make it yours</h2>
-  <div class="sub" data-i="persSub">Switch finishes and see them in the room. Price updates as you go.</div>
-  <div id="opts"></div>
-  <div id="total">
-    <div class="row"><span data-i="base">Base price</span><span id="basep"></span></div>
-    <div class="row"><span data-i="upg">Selected upgrades</span><span id="upgp"></span></div>
-    <div class="big"><span data-i="tot">Your home</span><b id="totp"></b></div>
-  </div>
+  <h2 data-i="persTitle">Arrange the furniture</h2>
+  <div class="sub" data-i="persSub">Drag a piece to move it. Rotate or remove it, or add more from the list.</div>
+  <div id="sel"></div>
+  <div class="lab" data-i="addT">Add furniture</div>
+  <div id="cat" class="sw"></div>
+  <button id="b-reset" data-i="reset">Reset layout</button>
   <button class="cta" id="b-lead" data-i="cta">Ask about this home</button>
-  <button id="b-up2" data-i="custom">Customize finishes ▸</button>
-  <div class="note" data-i="note">Sample pricing for this demo. Builders set their own numbers.</div>
+  <button id="b-up2" data-i="custom">Arrange furniture ▸</button>
 </div>
 <div id="map" class="panel"><div class="hd"><span data-i="plan">Floor plan</span><span id="mapRoom"></span></div><canvas></canvas></div>
 <div id="bar" class="panel">
   <button id="b-walk" class="on" data-i="walk">Walk</button>
   <button id="b-doll" data-i="doll">Dollhouse</button>
   <button id="b-tour" data-i="tour">▶ Guided tour</button>
+  <button id="b-fps" class="hide-m" data-i="fps">First-person</button>
   <span class="sep hide-m"></span>
-  <button id="b-up" data-i="pers">Personalize</button>
+  <button id="b-up" data-i="pers">Arrange</button>
 </div>
 <div id="lang" class="panel"><button data-l="en" class="on">EN</button><button data-l="zh">中文</button></div>
 <div id="hint" data-i="hint">Drag to look around · Click the floor to walk there · W A S D</div>
 <div id="modal"><div class="card panel">
   <h2 data-i="leadTitle">Request this configuration</h2>
-  <div class="note" data-i="leadSub">The builder receives your contact details plus the rooms you explored and the finishes you picked.</div>
+  <div class="note" data-i="leadSub">The builder receives your contact details plus the rooms you explored and how you arranged them.</div>
   <form id="lead">
     <label data-i="fName">Name</label><input name="name" required autocomplete="name">
     <label data-i="fEmail">Email</label><input name="email" type="email" required autocomplete="email">

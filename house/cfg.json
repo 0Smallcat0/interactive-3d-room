@@ -1,0 +1,149 @@
+{
+ "id": "glencoe",
+ "title_en": "Glencoe Residence",
+ "title_zh": "Glencoe 獨棟住宅",
+ "title_short": "Glencoe Residence",
+ "page_title": "Glencoe Residence — Interactive Walkthrough",
+ "load_en": "Loading the 3D house — about 30 MB",
+ "load_zh": "載入 3D 房子中，約 30 MB",
+ "stops": [
+  {
+   "room": "Foyer",
+   "at": [
+    697,
+    1015
+   ],
+   "look": [
+    697,
+    640
+   ],
+   "pitch": 0.12
+  },
+  {
+   "room": "Great Room",
+   "at": [
+    606,
+    658
+   ],
+   "look": [
+    697,
+    330
+   ],
+   "pitch": 0.12
+  },
+  {
+   "room": "Kitchen",
+   "at": [
+    429,
+    790
+   ],
+   "look": [
+    360,
+    560
+   ],
+   "pitch": -0.08
+  },
+  {
+   "room": "Breakfast",
+   "at": [
+    399,
+    534
+   ],
+   "look": [
+    250,
+    420
+   ],
+   "pitch": -0.06
+  },
+  {
+   "room": "Dining Room",
+   "at": [
+    278,
+    981
+   ],
+   "look": [
+    220,
+    1170
+   ],
+   "pitch": -0.06
+  },
+  {
+   "room": "Living Room",
+   "at": [
+    1075,
+    567
+   ],
+   "look": [
+    930,
+    770
+   ],
+   "pitch": -0.04
+  },
+  {
+   "room": "Study",
+   "at": [
+    1242,
+    764
+   ],
+   "look": [
+    1230,
+    900
+   ],
+   "pitch": -0.05
+  },
+  {
+   "room": "Exercise Room",
+   "at": [
+    1304,
+    1081
+   ],
+   "look": [
+    1560,
+    1030
+   ],
+   "pitch": -0.04
+  },
+  {
+   "room": "Terrace",
+   "at": [
+    432,
+    290
+   ],
+   "look": [
+    680,
+    320
+   ],
+   "pitch": -0.02
+  }
+ ],
+ "start": 1,
+ "lawn": "#b4cc8c",
+ "map_crop": [
+  130,
+  20,
+  1660,
+  1420
+ ],
+ "outdoor": {
+  "decks": {
+   "porch": "Front Porch",
+   "*": "Terrace"
+  },
+  "zones": [
+   {
+    "name": "Front Yard",
+    "py": [
+     1040,
+     null
+    ],
+    "px": [
+     367,
+     1027
+    ]
+   }
+  ],
+  "else": "Garden"
+ },
+ "pano": true,
+ "arrange": false
+}
