@@ -1,0 +1,182 @@
+{
+ "id": "driscoll",
+ "title_en": "The Driscoll · Southwest Homes",
+ "title_short": "The Driscoll",
+ "page_title": "The Driscoll — Interactive Walkthrough Sample",
+ "noindex": true,
+ "load_en": "Loading the house — about 8 MB",
+ "load_zh": "載入房子中，約 8 MB",
+ "stops": [
+  {
+   "room": "Front Yard",
+   "at": [
+    470,
+    1250
+   ],
+   "look": [
+    600,
+    640
+   ],
+   "pitch": 0.04
+  },
+  {
+   "room": "Great Room",
+   "at": [
+    600,
+    630
+   ],
+   "look": [
+    400,
+    330
+   ],
+   "pitch": -0.02
+  },
+  {
+   "room": "Kitchen",
+   "at": [
+    572,
+    386
+   ],
+   "look": [
+    540,
+    205
+   ],
+   "pitch": -0.08
+  },
+  {
+   "room": "Dining Room",
+   "at": [
+    455,
+    390
+   ],
+   "look": [
+    345,
+    215
+   ],
+   "pitch": -0.06
+  },
+  {
+   "room": "Master Bedroom",
+   "at": [
+    790,
+    330
+   ],
+   "look": [
+    745,
+    120
+   ],
+   "pitch": -0.06
+  },
+  {
+   "room": "Master Bath",
+   "at": [
+    992,
+    160
+   ],
+   "look": [
+    885,
+    150
+   ],
+   "pitch": -0.16
+  },
+  {
+   "room": "Bedroom 3",
+   "at": [
+    285,
+    250
+   ],
+   "look": [
+    150,
+    150
+   ],
+   "pitch": -0.06
+  },
+  {
+   "room": "Bedroom 2",
+   "at": [
+    285,
+    500
+   ],
+   "look": [
+    150,
+    600
+   ],
+   "pitch": -0.06
+  },
+  {
+   "room": "Laundry",
+   "at": [
+    850,
+    432
+   ],
+   "look": [
+    985,
+    385
+   ],
+   "pitch": -0.1
+  },
+  {
+   "room": "Garage",
+   "at": [
+    960,
+    540
+   ],
+   "look": [
+    700,
+    760
+   ],
+   "pitch": -0.05
+  },
+  {
+   "room": "Backyard",
+   "at": [
+    470,
+    -60
+   ],
+   "look": [
+    470,
+    400
+   ],
+   "pitch": -0.02
+  }
+ ],
+ "lawn": "#9ab87a",
+ "map_crop": [
+  96,
+  66,
+  1036,
+  850
+ ],
+ "outdoor": {
+  "decks": {
+   "porch": "Front Porch",
+   "*": "Patio"
+  },
+  "zones": [
+   {
+    "name": "Front Yard",
+    "py": [
+     806,
+     null
+    ]
+   },
+   {
+    "name": "Backyard",
+    "py": [
+     null,
+     84
+    ]
+   }
+  ],
+  "else": "Garden"
+ },
+ "outdoor_zh": {
+  "Front Porch": "門廊",
+  "Front Yard": "前院",
+  "Patio": "後院露台",
+  "Backyard": "後院",
+  "Garden": "庭院"
+ },
+ "start": 1,
+ "arrange": false
+}

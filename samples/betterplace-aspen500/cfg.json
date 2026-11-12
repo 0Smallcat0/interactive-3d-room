@@ -1,0 +1,131 @@
+{
+ "id": "betterplace-aspen500",
+ "title_en": "Aspen 500 · Better Place Design & Build",
+ "title_short": "Aspen 500",
+ "page_title": "Aspen 500 — Interactive Walkthrough Sample",
+ "noindex": true,
+ "load_en": "Loading the ADU — about 11 MB",
+ "load_zh": "載入房子中，約 11 MB",
+ "stops": [
+  {
+   "room": "Front Yard",
+   "at": [
+    -160,
+    538
+   ],
+   "look": [
+    293,
+    538
+   ],
+   "pitch": 0.02
+  },
+  {
+   "room": "Living Room",
+   "at": [
+    625,
+    525
+   ],
+   "look": [
+    330,
+    720
+   ],
+   "pitch": -0.1
+  },
+  {
+   "room": "Kitchen",
+   "at": [
+    615,
+    540
+   ],
+   "look": [
+    930,
+    690
+   ],
+   "pitch": -0.16
+  },
+  {
+   "room": "Bedroom",
+   "at": [
+    640,
+    420
+   ],
+   "look": [
+    740,
+    190
+   ],
+   "pitch": -0.1
+  },
+  {
+   "room": "Bath",
+   "at": [
+    500,
+    335
+   ],
+   "look": [
+    455,
+    165
+   ],
+   "pitch": -0.28
+  },
+  {
+   "room": "Hall",
+   "at": [
+    505,
+    425
+   ],
+   "look": [
+    360,
+    420
+   ],
+   "pitch": -0.12
+  },
+  {
+   "room": "Backyard",
+   "at": [
+    630,
+    -200
+   ],
+   "look": [
+    630,
+    300
+   ],
+   "pitch": -0.02
+  }
+ ],
+ "lawn": "#9ab87a",
+ "map_crop": [
+  250,
+  100,
+  1010,
+  850
+ ],
+ "outdoor": {
+  "decks": {
+   "*": "Front Step"
+  },
+  "zones": [
+   {
+    "name": "Front Yard",
+    "px": [
+     null,
+     293
+    ]
+   }
+  ],
+  "else": "Backyard"
+ },
+ "outdoor_zh": {
+  "Front Step": "門口",
+  "Front Yard": "前院",
+  "Backyard": "後院"
+ },
+ "doll": {
+  "h": 12,
+  "dx": 4,
+  "dz": 9,
+  "min": 5,
+  "max": 30
+ },
+ "start": 1,
+ "arrange": false
+}

@@ -1,0 +1,201 @@
+{
+ "id": "garrett-signature",
+ "title_en": "The Signature · Garrett Signature Homes",
+ "title_short": "The Signature",
+ "page_title": "The Signature — Interactive Walkthrough Sample",
+ "noindex": true,
+ "load_en": "Loading the house — about 21 MB",
+ "load_zh": "載入房子中，約 21 MB",
+ "stops": [
+  {
+   "room": "Front Yard",
+   "at": [
+    1185,
+    1560
+   ],
+   "look": [
+    1185,
+    1000
+   ],
+   "pitch": 0.03
+  },
+  {
+   "room": "Entry",
+   "at": [
+    1180,
+    1035
+   ],
+   "look": [
+    1250,
+    640
+   ],
+   "pitch": -0.03
+  },
+  {
+   "room": "Gathering Room",
+   "at": [
+    1150,
+    770
+   ],
+   "look": [
+    1420,
+    400
+   ],
+   "pitch": -0.05
+  },
+  {
+   "room": "Kitchen",
+   "at": [
+    900,
+    795
+   ],
+   "look": [
+    880,
+    600
+   ],
+   "pitch": -0.16
+  },
+  {
+   "room": "Dining",
+   "at": [
+    1045,
+    420
+   ],
+   "look": [
+    820,
+    480
+   ],
+   "pitch": -0.1
+  },
+  {
+   "room": "Master Bedroom",
+   "at": [
+    480,
+    470
+   ],
+   "look": [
+    270,
+    330
+   ],
+   "pitch": -0.08
+  },
+  {
+   "room": "Master Bath",
+   "at": [
+    262,
+    785
+   ],
+   "look": [
+    215,
+    560
+   ],
+   "pitch": -0.12
+  },
+  {
+   "room": "Study",
+   "at": [
+    1050,
+    1065
+   ],
+   "look": [
+    880,
+    960
+   ],
+   "pitch": -0.1
+  },
+  {
+   "room": "Bedroom 2",
+   "at": [
+    1465,
+    1045
+   ],
+   "look": [
+    1320,
+    930
+   ],
+   "pitch": -0.1
+  },
+  {
+   "room": "Bedroom 4",
+   "at": [
+    1700,
+    725
+   ],
+   "look": [
+    1800,
+    520
+   ],
+   "pitch": -0.1
+  },
+  {
+   "room": "Garage",
+   "at": [
+    620,
+    1450
+   ],
+   "look": [
+    330,
+    1000
+   ],
+   "pitch": -0.05
+  },
+  {
+   "room": "Covered Patio",
+   "at": [
+    1000,
+    290
+   ],
+   "look": [
+    1350,
+    110
+   ],
+   "pitch": -0.04
+  }
+ ],
+ "lawn": "#9ab87a",
+ "map_crop": [
+  30,
+  20,
+  2020,
+  1620
+ ],
+ "outdoor": {
+  "decks": {
+   "porch": "Front Porch",
+   "*": "Covered Patio"
+  },
+  "zones": [
+   {
+    "name": "Driveway",
+    "px": [
+     null,
+     212
+    ]
+   },
+   {
+    "name": "Front Yard",
+    "py": [
+     1100,
+     null
+    ]
+   }
+  ],
+  "else": "Backyard"
+ },
+ "outdoor_zh": {
+  "Front Porch": "門廊",
+  "Covered Patio": "有頂露台",
+  "Driveway": "車道",
+  "Front Yard": "前院",
+  "Backyard": "後院"
+ },
+ "doll": {
+  "h": 24,
+  "dx": -6,
+  "dz": 20,
+  "min": 10,
+  "max": 90
+ },
+ "start": 2,
+ "arrange": false
+}

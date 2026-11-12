@@ -6,9 +6,9 @@
 
 Runs in any modern browser, on desktop or phone.
 
-**New: a whole house built from a real floor plan:** walk through it, change the finishes and see the price update: https://0smallcat0.github.io/interactive-3d-room/house/
+**New: a whole house built from a real floor plan:** 13 rooms traced to scale, lit with Blender Cycles; open any tour stop as a 360° path-traced view, then walk room to room or in first person: https://0smallcat0.github.io/interactive-3d-room/house/
 
-新作品：用真實平面圖蓋出的一整棟房子，可以走進去、換建材、看總價：https://0smallcat0.github.io/interactive-3d-room/house/
+新作品：用真實平面圖照比例蓋出的一整棟房子（13 個空間，Blender Cycles 打光），每個導覽站是 360° 光線追蹤全景，也可以一間間走或用第一人稱走：https://0smallcat0.github.io/interactive-3d-room/house/
 
 瀏覽器直接開，免安裝，電腦和手機都能用。
 
